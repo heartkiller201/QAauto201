@@ -1,0 +1,4 @@
+tests\base\CustomListeners.class
+tests\searchflats\SearchFlatTest.class
+tests\base\BaseTest.class
+tests\searchflats\SOUTTest.class
