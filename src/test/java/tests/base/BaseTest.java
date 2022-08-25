@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import pages.base.BasePage;
 import pages.listing.RealtListingPage;
+import pages.realthome.LoginPage;
 import pages.realthome.RealtHomePage;
 
 import java.time.Duration;
@@ -19,7 +20,9 @@ public class BaseTest {
     protected WebDriver driver = CommonAction.createDriver();
     protected BasePage basePage = new BasePage(driver);
     protected RealtHomePage realtHomePage = new RealtHomePage(driver);
-    protected RealtListingPage realtListingPage = new RealtListingPage((driver));
+    protected RealtListingPage realtListingPage = new RealtListingPage(driver);
+
+    protected LoginPage loginPage = new LoginPage(driver);
 
 
     protected void switchWindow() {
