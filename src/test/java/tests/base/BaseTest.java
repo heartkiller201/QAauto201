@@ -11,6 +11,7 @@ import org.testng.annotations.AfterSuite;
 import pages.base.BasePage;
 import pages.listing.RealtListingPage;
 import pages.realthome.LoginPage;
+import pages.realthome.ProfilePage;
 import pages.realthome.RealtHomePage;
 
 import java.time.Duration;
@@ -23,6 +24,8 @@ public class BaseTest {
     protected RealtListingPage realtListingPage = new RealtListingPage(driver);
 
     protected LoginPage loginPage = new LoginPage(driver);
+
+    protected ProfilePage profilePage = new ProfilePage(driver);
 
 
     protected void switchWindow() {
@@ -47,6 +50,7 @@ public class BaseTest {
     }
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));    //работа с алертами
+
     protected void switchAlert() {
 
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());

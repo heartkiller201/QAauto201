@@ -10,9 +10,8 @@ public class Config {
     public static final String HOME_PAGE = "https://realt.by/";
     public static final String LOGIN_PAGE = "https://realt.by/login/?nextPage=https://realt.by/";
 
-
-
-
+    public static final String LOGIN = "xvzrwyeiudjwf@knowledgemd.com";
+    public static final String PASSWORD = "Qazwsx123";
 
 
 }

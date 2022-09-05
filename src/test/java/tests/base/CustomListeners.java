@@ -32,15 +32,15 @@ public class CustomListeners implements ITestListener {
         System.out.println(methodName);
     }
 
-        public void screenShot(String methodName, WebDriver driver){
-            File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            try {
-                FileUtils.copyFile(srcFile, new File(methodName + ".jpg"));
-            } catch (IOException e) {
-                e.printStackTrace();
+    public void screenShot(String methodName, WebDriver driver) {
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(srcFile, new File(".//screenshot//" + methodName + ".jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
 
-            }
         }
+    }
 
 
     @Override

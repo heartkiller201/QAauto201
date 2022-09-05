@@ -22,13 +22,8 @@ public class RealtHomePage extends BasePage {
     By listCurrency = By.xpath("//a[@class='btn btn-sm']");
     By euro = By.xpath("//a[@data-currency='978']");
 
-    By loginBt = By.xpath("//a[@class='btn btn-outline-gray btn-sm btn-icon']");
-    By profileBt = By.xpath("//div[@class='auth-link']");
-    //By accountProfile = By.xpath("//a[@href='https://realt.by/account/profile/']");
 
-
-
-    public RealtHomePage enterCountRooms() {
+    public RealtHomePage enterCountRooms3() {
         driver.findElement(countRooms).click();
         driver.findElement(option3rooms).click();
         return this;
@@ -39,28 +34,13 @@ public class RealtHomePage extends BasePage {
         return this;
     }
 
-    public RealtHomePage chooseEuro() {
+    public void chooseEuro() {
         driver.findElement(listCurrency).click();
         driver.findElement(euro).click();
         String euroClass = driver.findElement(euro).getAttribute("class");
         Assert.assertEquals(euroClass, "list-group-item color-primary");
         System.out.println(euroClass);
-        return this;
     }
-
-    public  RealtHomePage userIsInSystem()  {
-        webElementIsVisible(driver.findElement(profileBt));
-        driver.get("https://realt.by/account/profile/");
-        By emailInput = By.xpath("//input[@id='email']");
-        String email = webElementIsVisible(driver.findElement(emailInput)).getAttribute("value");
-        Assert.assertEquals(email, "xvzrwyeiudjwf@knowledgemd.com");
-        System.out.println(email);
-        return this;
-    }
-
-
-
-
 
 
 }

@@ -13,16 +13,15 @@ public class RealtListingPage extends BasePage {
     }
 
     private final By card = By.xpath("//div[@class='listing view-format']//div[@data-mode='3']");
-    public RealtListingPage checkCountCards(){
+
+    public RealtListingPage checkCountCards() {
         webElementIsVisible(driver.findElement(card));
         int countCard = driver.findElements(card).size();
-        Assertion assertation = new Assertion();   //создаем экземляр класса для ассерта
-        assertation.assertEquals(countCard, 20); //сравниваем
+        Assertion assertation = new Assertion();
+        assertation.assertEquals(countCard, 19); //сравниваем
         //можно использовать как альтернативу верхним двум >>>>>> Assert.assertEquals(countCard, 20);
         return this;
     }
-
-
 
 
 }

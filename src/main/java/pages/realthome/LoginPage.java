@@ -19,33 +19,29 @@ public class LoginPage extends BasePage {
     By loginBt = By.xpath("//span[text()='Войти']");
 
 
-
     public void openLoginPage() {
         driver.get(LOGIN_PAGE);
     }
 
-    public LoginPage loginProcess() throws InterruptedException {
-        webElementIsVisible(driver.findElement(loginInput));
-        driver.findElement(loginInput).sendKeys("xvzrwyeiudjwf@knowledgemd.com");
-        webElementIsVisible(driver.findElement(proceedBt)).click();
-        Thread.sleep(2000);
-        webElementIsVisible(driver.findElement(passwordInput)).sendKeys("Qazwsx123");
-        webElementIsVisible(driver.findElement(loginBt)).submit();
+    public LoginPage inputLogin(String email) {
+        driver.findElement(loginInput).sendKeys(email);
         return this;
     }
 
+    public LoginPage inputPassword(String password) {
+        driver.findElement(passwordInput).sendKeys(password);
+        return this;
+    }
 
+    public LoginPage proceedBtClick() {
+        driver.findElement(proceedBt).click();
+        return this;
+    }
 
-
-
-
-
-
-
-
-
-
-
+    public LoginPage loginBtClick() {
+        driver.findElement(loginBt).submit();
+        return this;
+    }
 
 
 }

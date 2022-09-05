@@ -45,6 +45,13 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>./src/test/resources/${testngXML}</suiteXmlFile>
                         </suiteXmlFiles>
+                        <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                        <systemProperties>
+                            <property>
+                                <name>allure.results.directory</name>
+                                <value>${project.build.directory}/allure-results</value>
+                            </property>
+                        </systemProperties>
                     </configuration>
                 </plugin>
             </plugins>
@@ -75,7 +82,12 @@
             <version>2.11.0</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.19.0</version>
+            <scope>test</scope>
+        </dependency>
 
 
 

@@ -4,7 +4,7 @@
 <suite name="Sout">
     <test verbose="2" preserve-order="true" name="sout">
         <classes>
-            <class name="tests.searchflats.SOUTTest">
+            <class name="tests.common.SOUTTest">
                 <methods>
                     <include name="SOUTTest"/>
                 </methods>
