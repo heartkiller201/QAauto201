@@ -12,6 +12,10 @@
                     <include name="checkIsRedirectToListing"/>
                 </methods>
             </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Login">
+        <classes>
             <class name="tests.common.LoginTest">
                 <methods>
                     <include name="checkLoginIsSuccessful"/>

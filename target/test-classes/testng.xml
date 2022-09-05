@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="All Test Suite">
-    <listeners>
+    <!--<listeners>
         <listener class-name="tests.base.CustomListeners" />
-    </listeners>
+    </listeners>-->
     <test verbose="2" preserve-order="true" name="Search">
         <classes>
             <class name="tests.common.SearchFlatTest">
@@ -12,6 +12,10 @@
                     <include name="checkIsRedirectToListing"/>
                 </methods>
             </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Login">
+        <classes>
             <class name="tests.common.LoginTest">
                 <methods>
                     <include name="checkLoginIsSuccessful"/>
