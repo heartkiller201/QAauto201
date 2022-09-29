@@ -22,6 +22,10 @@ public class RealtHomePage extends BasePage {
     By listCurrency = By.xpath("//a[@class='btn btn-sm']");
     By euro = By.xpath("//a[@data-currency='978']");
 
+    By addAd = By.xpath("//div[@class='main-header']//span[text()='Добавить объявление']");
+
+    By flatToSell = By.xpath("//div[@class='modal-content']//a[@target='_top']");
+
 
     public RealtHomePage enterCountRooms3() {
         driver.findElement(countRooms).click();
@@ -40,6 +44,12 @@ public class RealtHomePage extends BasePage {
         String euroClass = driver.findElement(euro).getAttribute("class");
         Assert.assertEquals(euroClass, "list-group-item color-primary");
         System.out.println(euroClass);
+    }
+
+    public void addFlatForSale(){
+        driver.findElement(addAd).click();
+        driver.findElement(flatToSell).click();
+
     }
 
 

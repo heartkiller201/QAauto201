@@ -1,15 +1,14 @@
 package tests.base;
 
 import common.CommonAction;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeTest;
 import pages.base.BasePage;
 import pages.listing.RealtListingPage;
+import pages.realthome.FlatSalePage;
 import pages.realthome.LoginPage;
 import pages.realthome.ProfilePage;
 import pages.realthome.RealtHomePage;
@@ -26,6 +25,8 @@ public class BaseTest {
     protected LoginPage loginPage = new LoginPage(driver);
 
     protected ProfilePage profilePage = new ProfilePage(driver);
+
+    protected FlatSalePage flatSalePage = new FlatSalePage(driver);
 
 
     protected void switchWindow() {
@@ -63,6 +64,8 @@ public class BaseTest {
     public void quite() {
         driver.quit();
     }
+
+
 
 
 }

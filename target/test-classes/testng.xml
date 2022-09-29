@@ -2,10 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="All Test Suite">
-    <!--<listeners>
-        <listener class-name="tests.base.CustomListeners" />
-    </listeners>-->
-    <test verbose="2" preserve-order="true" name="Search">
+      <test verbose="2" preserve-order="true" name="Check amount of ads listing page">
         <classes>
             <class name="tests.common.SearchFlatTest">
                 <methods>
@@ -14,11 +11,29 @@
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="Login">
+    <test verbose="2" preserve-order="true" name="Login is successful">
         <classes>
             <class name="tests.common.LoginTest">
                 <methods>
                     <include name="checkLoginIsSuccessful"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Euro is selected">
+        <classes>
+            <class name="tests.common.EuroCurrencyTest">
+                <methods>
+                    <include name="checkEuroCurrencyIsChosen"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Data provider">
+        <classes>
+            <class name="tests.common.SOUTTest">
+                <methods>
+                    <include name="SOUTTest"/>
                 </methods>
             </class>
         </classes>

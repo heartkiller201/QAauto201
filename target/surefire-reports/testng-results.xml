@@ -1,27 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="3" total="9" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-01T20:57:59 MSK" name="All Test Suite" finished-at="2022-09-01T20:58:09 MSK" duration-ms="10079">
+  <suite started-at="2022-09-26T15:33:27 MSK" name="Surefire suite" finished-at="2022-09-26T15:33:39 MSK" duration-ms="12179">
     <groups>
     </groups>
-    <test started-at="2022-09-01T20:57:59 MSK" name="Search" finished-at="2022-09-01T20:58:09 MSK" duration-ms="10079">
-      <class name="tests.searchflats.LoginTest">
-        <test-method signature="checkLoginIsSuccessful()[pri:0, instance:tests.searchflats.LoginTest@5238896f]" started-at="2022-09-01T20:58:03 MSK" name="checkLoginIsSuccessful" finished-at="2022-09-01T20:58:09 MSK" duration-ms="5663" status="PASS">
+    <test started-at="2022-09-26T15:33:27 MSK" name="Surefire test" finished-at="2022-09-26T15:33:39 MSK" duration-ms="12179">
+      <class name="tests.common.EuroCurrencyTest">
+        <test-method signature="checkEuroCurrencyIsChosen()[pri:0, instance:tests.common.EuroCurrencyTest@e4ca109]" started-at="2022-09-26T15:33:27 MSK" name="checkEuroCurrencyIsChosen" description="Euro" finished-at="2022-09-26T15:33:30 MSK" duration-ms="3250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEuroCurrencyIsChosen -->
+      </class> <!-- tests.common.EuroCurrencyTest -->
+      <class name="tests.common.LoginTest">
+        <test-method signature="checkLoginIsSuccessful()[pri:0, instance:tests.common.LoginTest@3a3ad8e7]" started-at="2022-09-26T15:33:31 MSK" name="checkLoginIsSuccessful" finished-at="2022-09-26T15:33:36 MSK" duration-ms="5912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginIsSuccessful -->
-      </class> <!-- tests.searchflats.LoginTest -->
-      <class name="tests.searchflats.SearchFlatTest">
-        <test-method signature="checkIsRedirectToListing()[pri:0, instance:tests.searchflats.SearchFlatTest@149d7cc6]" started-at="2022-09-01T20:57:59 MSK" name="checkIsRedirectToListing" finished-at="2022-09-01T20:58:03 MSK" duration-ms="4294" status="PASS">
+      </class> <!-- tests.common.LoginTest -->
+      <class name="tests.common.SOUTTest">
+        <test-method signature="SOUTTest(java.lang.String,java.lang.String)[pri:0, instance:tests.common.SOUTTest@64b73e0a]" started-at="2022-09-26T15:33:39 MSK" name="SOUTTest" data-provider="dataProviderMethod" finished-at="2022-09-26T15:33:39 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[string1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkIsRedirectToListing -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:tests.searchflats.SearchFlatTest@149d7cc6]" started-at="2022-09-01T20:58:09 MSK" name="quite" finished-at="2022-09-01T20:58:09 MSK" duration-ms="152" status="PASS">
+        </test-method> <!-- SOUTTest -->
+        <test-method signature="SOUTTest(java.lang.String,java.lang.String)[pri:0, instance:tests.common.SOUTTest@64b73e0a]" started-at="2022-09-26T15:33:39 MSK" name="SOUTTest" data-provider="dataProviderMethod" finished-at="2022-09-26T15:33:39 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[string]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SOUTTest -->
+        <test-method signature="SOUTTest(java.lang.String,java.lang.String)[pri:0, instance:tests.common.SOUTTest@64b73e0a]" started-at="2022-09-26T15:33:39 MSK" name="SOUTTest" data-provider="dataProviderMethod" finished-at="2022-09-26T15:33:39 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[string3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SOUTTest -->
+      </class> <!-- tests.common.SOUTTest -->
+      <class name="tests.base.BaseTest">
+        <test-method is-config="true" signature="quite()[pri:0, instance:tests.base.BaseTest@7e050be1]" started-at="2022-09-26T15:33:39 MSK" name="quite" finished-at="2022-09-26T15:33:40 MSK" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
-      </class> <!-- tests.searchflats.SearchFlatTest -->
-    </test> <!-- Search -->
-  </suite> <!-- All Test Suite -->
+      </class> <!-- tests.base.BaseTest -->
+      <class name="tests.common.SearchFlatTest">
+        <test-method signature="checkIsRedirectToListing()[pri:0, instance:tests.common.SearchFlatTest@6a6d1ff3]" started-at="2022-09-26T15:33:36 MSK" name="checkIsRedirectToListing" finished-at="2022-09-26T15:33:39 MSK" duration-ms="2895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIsRedirectToListing -->
+      </class> <!-- tests.common.SearchFlatTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

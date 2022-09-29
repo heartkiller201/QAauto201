@@ -24,7 +24,7 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage inputLogin(String email) {
-        driver.findElement(loginInput).sendKeys(email);
+        driver.findElement (loginInput).sendKeys(email);
         return this;
     }
 

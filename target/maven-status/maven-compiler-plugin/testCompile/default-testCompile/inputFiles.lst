@@ -1,7 +1,6 @@
-D:\QAauto201\src\test\java\tests\searchflats\EuroCurrencyTest.java
 D:\QAauto201\src\test\java\tests\base\BaseTest.java
-D:\QAauto201\src\test\java\tests\searchflats\DataProviderClass.java
-D:\QAauto201\src\test\java\tests\searchflats\LoginTest.java
-D:\QAauto201\src\test\java\tests\searchflats\SOUTTest.java
-D:\QAauto201\src\test\java\tests\base\CustomListeners.java
-D:\QAauto201\src\test\java\tests\searchflats\SearchFlatTest.java
+D:\QAauto201\src\test\java\tests\common\DataProviderClass.java
+D:\QAauto201\src\test\java\tests\common\LoginTest.java
+D:\QAauto201\src\test\java\tests\common\EuroCurrencyTest.java
+D:\QAauto201\src\test\java\tests\common\SOUTTest.java
+D:\QAauto201\src\test\java\tests\common\SearchFlatTest.java

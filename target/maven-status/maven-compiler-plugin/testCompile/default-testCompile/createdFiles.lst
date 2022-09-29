@@ -1,7 +1,6 @@
-tests\searchflats\LoginTest.class
 tests\base\BaseTest.class
-tests\searchflats\SOUTTest.class
-tests\base\CustomListeners.class
-tests\searchflats\SearchFlatTest.class
-tests\searchflats\EuroCurrencyTest.class
-tests\searchflats\DataProviderClass.class
+tests\common\EuroCurrencyTest.class
+tests\common\SOUTTest.class
+tests\common\SearchFlatTest.class
+tests\common\DataProviderClass.class
+tests\common\LoginTest.class
