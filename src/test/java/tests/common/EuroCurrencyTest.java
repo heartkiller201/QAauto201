@@ -11,5 +11,6 @@ public class EuroCurrencyTest extends BaseTest {
         realtHomePage.chooseEuro();
 
 
+
     }
 }

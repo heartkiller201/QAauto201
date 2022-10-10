@@ -13,5 +13,10 @@ public class Config {
     public static final String LOGIN = "xvzrwyeiudjwf@knowledgemd.com";
     public static final String PASSWORD = "Qazwsx123";
 
+    public static final String BH_HOME_PAGE = "https://www.bhphotovideo.com/";
+
+    public static final String BH_EMAIL = "xvzrwyeiudjwf@knowledgemd.com";
+
+    public static final String BH_PASSWORD = "!Xgamerbot12";
 
 }

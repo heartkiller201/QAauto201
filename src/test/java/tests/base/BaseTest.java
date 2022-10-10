@@ -5,8 +5,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
+import pages.allegro.AllegroLoginPage;
 import pages.base.BasePage;
+import pages.allegro.AllegroHomePage;
 import pages.listing.RealtListingPage;
 import pages.realthome.FlatSalePage;
 import pages.realthome.LoginPage;
@@ -27,6 +28,10 @@ public class BaseTest {
     protected ProfilePage profilePage = new ProfilePage(driver);
 
     protected FlatSalePage flatSalePage = new FlatSalePage(driver);
+
+    protected AllegroHomePage allegroHomePage = new AllegroHomePage(driver);
+
+    protected AllegroLoginPage allegroLoginPage = new AllegroLoginPage(driver);
 
 
     protected void switchWindow() {
@@ -64,6 +69,7 @@ public class BaseTest {
     public void quite() {
         driver.quit();
     }
+
 
 
 

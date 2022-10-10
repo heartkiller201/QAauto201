@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="15.511" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="43.009" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.3.1\bin"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="C:\apache-maven-3.8.6-bin"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.3.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.3.1\bin;C:\apache-maven-3.8.6-bin\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.3.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.3.1\bin;C:\apache-maven-3.8.6-bin\bin;C:\apache-maven-3.8.6-bin\bin;C:\allure-2.19.0\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.3.1+2-LTS-6"/>
@@ -60,10 +60,13 @@
     <property name="library.jansi.path" value="C:\apache-maven-3.8.6-bin\lib\jansi-native"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="checkEuroCurrencyIsChosen" classname="tests.common.EuroCurrencyTest" time="3.306"/>
-  <testcase name="checkLoginIsSuccessful" classname="tests.common.LoginTest" time="5.914"/>
-  <testcase name="checkIsRedirectToListing" classname="tests.common.SearchFlatTest" time="2.896"/>
-  <testcase name="SOUTTest" classname="tests.common.SOUTTest" time="0"/>
-  <testcase name="SOUTTest" classname="tests.common.SOUTTest" time="0"/>
-  <testcase name="SOUTTest" classname="tests.common.SOUTTest" time="0.008"/>
+  <testcase name="runScenario" classname="runner.CucumberRunnerTests" time="0.149"/>
+  <testcase name="workWithCookie" classname="tests.common.CookieTest" time="20.213"/>
+  <testcase name="checkEuroCurrencyIsChosen" classname="tests.common.EuroCurrencyTest" time="2.776"/>
+  <testcase name="errorMessageIsAppearedForUnverifiedPhone" classname="tests.common.FlatSaleTest" time="8.04"/>
+  <testcase name="checkLoginIsSuccessful" classname="tests.common.LoginTest" time="5.131"/>
+  <testcase name="checkIsRedirectToListing" classname="tests.common.SearchFlatTest" time="2.709"/>
+  <testcase name="SOUTTest" classname="tests.common.SOUTTest" time="0.002"/>
+  <testcase name="SOUTTest" classname="tests.common.SOUTTest" time="0.001"/>
+  <testcase name="SOUTTest" classname="tests.common.SOUTTest" time="0.001"/>
 </testsuite>

@@ -8,8 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Random;
 
-import static common.Config.EXPLICIT_WAIT;
-import static common.Config.HOME_PAGE;
+import static common.Config.*;
 
 public class BasePage {
     protected WebDriver driver;
@@ -24,6 +23,9 @@ public class BasePage {
 
     public void openHomePage() {
         driver.get(HOME_PAGE);
+    }
+    public void openBHHomePage() {
+        driver.get(BH_HOME_PAGE);
     }
 
     public WebElement webElementIsVisible(WebElement element) {

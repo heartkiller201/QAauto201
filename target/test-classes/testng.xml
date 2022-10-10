@@ -38,4 +38,13 @@
             </class>
         </classes>
     </test>
+    <test verbose="2" preserve-order="true" name="Adding cookie">
+        <classes>
+            <class name="tests.common.CookieTest">
+                <methods>
+                    <include name="workWithCookie"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

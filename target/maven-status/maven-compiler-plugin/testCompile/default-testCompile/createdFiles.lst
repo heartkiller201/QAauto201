@@ -1,6 +1,6 @@
-tests\base\BaseTest.class
 tests\common\EuroCurrencyTest.class
-tests\common\SOUTTest.class
 tests\common\SearchFlatTest.class
 tests\common\DataProviderClass.class
 tests\common\LoginTest.class
+tests\base\BaseTest.class
+tests\common\SOUTTest.class
